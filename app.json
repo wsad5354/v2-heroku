@@ -1,14 +1,38 @@
 {
-    "name": "SPAPP",
-    "description": "Deploy SPAPP on Heroku.",
-    "keywords": ["V2"],
-    "env": {
-        "UUID": {
-            "description": "V2Ray UUID",
-            "value": "c9c9e59e-d8d9-4c3c-be32-35a5ba337952"
-        }
+  "name": "V2ray-Heroku部署",
+  "description": "Deploy V2ray to Heroku.",
+  "keywords": [
+    "V2ray"
+  ],
+  "env": {
+    "AppName": {
+      "description": "请输入最上方填写的App Name，用于订阅链接,必填!",
+      "value": ""
     },
-    "website": "https://ibcl.us/Heroku-V2Ray_20191014/",
-    "repository": "https://github.com/wsad5354/v2-heroku",
-    "stack": "container"
+    "Subscribe_Address": {
+      "description": "请输入查看订阅的地址,前面不用加`/`",
+      "value": "subscribe"
+    },
+    "UUID": {
+      "description": "请输入自己的UUID,如无程序会自动随机一份",
+      "value": "",
+      "required": false
+    },
+    "AlterID": {
+      "description": "AlterID大小，推荐16，数值越大内存占用越高",
+      "value": "16",
+      "required": false
+    },
+    "V2_Path": {
+      "description": "Path路径，默认留空则随机生成一份",
+      "value": "",
+      "required": false
+    },
+    "Anti_Proxy_Path": {
+      "description": "反代理的网站地址,默认为百度",
+      "value": "https://www.baidu.com",
+      "required": true
+    }
+  },
+  "stack": "container"
 }
