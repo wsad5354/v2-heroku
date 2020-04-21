@@ -1,11 +1,11 @@
 {
-    "name": "V2Ray",
+    "name": "V2",
     "description": "Deploy V2ray on Heroku.",
-    "keywords": ["V2Ray"],
+    "keywords": ["V2"],
     "env": {
         "UUID": {
             "description": "V2Ray UUID",
-            "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+            "value": "c9c9e59e-d8d9-4c3c-be32-35a5ba337952"
         }
     },
     "website": "https://ibcl.us/Heroku-V2Ray_20191014/",
