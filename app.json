@@ -1,5 +1,5 @@
 {
-    "name": "V2",
+    "name": "SPAPP",
     "description": "Deploy V2ray on Heroku.",
     "keywords": ["V2"],
     "env": {
