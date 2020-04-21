@@ -14,9 +14,8 @@
       "value": "subscribe"
     },
     "UUID": {
-      "description": "请输入自己的UUID,如无程序会自动随机一份",
-      "value": "",
-      "required": false
+            "description": "V2Ray UUID",
+            "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
     },
     "AlterID": {
       "description": "AlterID大小，推荐16，数值越大内存占用越高",
