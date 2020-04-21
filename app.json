@@ -1,6 +1,6 @@
 {
     "name": "SPAPP",
-    "description": "Deploy V2ray on Heroku.",
+    "description": "Deploy SPAPP on Heroku.",
     "keywords": ["V2"],
     "env": {
         "UUID": {
