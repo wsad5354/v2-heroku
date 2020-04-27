@@ -6,6 +6,11 @@
     "UUID": {
       "description": "The default UUID is below, please set your own",
       "value": "58310015-e953-488a-a8c9-8133a09c8e7b"
+    "AlterID": {
+      "description": "AlterID大小，推荐16，数值越大内存占用越高",
+      "value": "16",
+      "required": false
+    },
      }
   },
   "website": "https://github.com/WinstonH/v2ray-heroku",
