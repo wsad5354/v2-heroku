@@ -14,29 +14,28 @@ rm -rf /tmp/v2ray
 install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
-    "inbounds": [
-        {
-            "port": $PORT,
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "$UUID",
-                        "alterId": 64
-                    }
-                ],
-                "disableInsecureEncryption": true
-            },
-            "streamSettings": {
-                "network": "ws"
+    "inbound": {
+        "protocol": "vmess",
+        "listen": "127.0.0.1",
+        "port": SETTINGS['port'],
+        "settings": {
+            "clients": [{
+                "id": SETTINGS['uuid'],
+                "level": 1,
+                "alterId": int(SETTINGS['alter_id'])
+            }]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "wsSettings": {
+                "path": SETTINGS['v2ray_path']
             }
         }
-    ],
-    "outbounds": [
-        {
-            "protocol": "freedom"
-        }
-    ]
+    },
+    "outbound": {
+        "protocol": "freedom",
+        "settings": {}
+    }
 }
 EOF
 
