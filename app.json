@@ -5,14 +5,6 @@
     "V2ray"
   ],
   "env": {
-    "AppName": {
-      "description": "请输入最上方填写的App Name，用于订阅链接,必填!",
-      "value": ""
-    },
-    "Subscribe_Address": {
-      "description": "请输入查看订阅的地址,前面不用加`/`",
-      "value": "subscribe"
-    },
     "UUID": {
             "description": "V2Ray UUID",
             "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
