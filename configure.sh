@@ -23,7 +23,6 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                     {
                         "id": "$UUID",
                         "alterId": 64
-                "security": "chacha20-poly1305"
                     }
                 ],
                 "disableInsecureEncryption": true
