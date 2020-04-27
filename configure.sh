@@ -18,15 +18,14 @@ cat << EOF > /usr/local/etc/v2ray/config.json
         {
             "port": $PORT,
             "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "$UUID",
-                        "alterId": 64
-                    }
-                ],
-                "disableInsecureEncryption": true
-            },
+        "settings": {
+            "clients": [{
+                "id": "$UUID",
+                "level": 1,
+                "alterId": 64,
+                "security": "chacha20-poly1305"
+            }]
+        },
     "streamSettings": {
       "network": "ws",
       "wsSettings": {
