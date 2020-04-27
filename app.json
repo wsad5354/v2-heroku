@@ -11,6 +11,7 @@
       "description": "AlterID大小，推荐16，数值越大内存占用越高",
       "value": "16",
       "required": false
-    },
+    }
+  },
   "stack": "container"
 }
