@@ -14,6 +14,9 @@ rm -rf /tmp/v2ray
 install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
+    "log": {
+        "loglevel": "warning"
+    },
     "inbound": {
         "protocol": "vmess",
         "listen": "127.0.0.1",
