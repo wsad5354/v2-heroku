@@ -16,7 +16,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 {
     "inbounds": [
         {
-            "port": $PORT,
+            "port": 8080,
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -27,13 +27,11 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 ],
                 "disableInsecureEncryption": true
             },
-    "streamSettings": {
-      "network": "ws",
-      "wsSettings": {
-        "path": "/ws"
-      }
-    }
-  },
+            "streamSettings": {
+                "network": "ws"
+            }
+        }
+    ],
     "outbounds": [
         {
             "protocol": "freedom"
