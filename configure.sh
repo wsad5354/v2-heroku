@@ -27,11 +27,13 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 ],
                 "disableInsecureEncryption": true
             },
-            "streamSettings": {
-                "network": "ws"
-            }
-        }
-    ],
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/ws"
+      }
+    }
+  },
     "outbounds": [
         {
             "protocol": "freedom"
